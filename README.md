@@ -1,11 +1,14 @@
 #CCDC Password Generator
+## Mac Edition!
 
 This is a password generator for CCDC at WWU. The conditions and configuration of this password generator are specified below.
 
 ##Requirements
 There's a couple requirements for the password generator to work, and they're all pretty simple.
 
-- Run `bundle install` to install the `backports` and `clipboard` gems. This solves any dependency problems with Ruby 1.8.7 v. 1.9.2.
+- [Growl](http://growl.info/) support is included.
+
+- Run `bundle install` to install the `backports`, `clipboard`, and `ruby-gntp` (Growl) gems. This solves any dependency problems with Ruby 1.8.7 v. 1.9.2.
 
 - Two text files in the same directory as `pass.rb`: _words.txt_ and _symbols.txt_. Both are populated with common phrases and symbols, but can be changed at your discretion.
 
