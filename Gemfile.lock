@@ -1,0 +1,12 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    backports (2.3.0)
+    clipboard (1.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  backports
+  clipboard

@@ -12,11 +12,23 @@
 
 # TODO: Digits under 10 are displayed as single digit. 
 
+require 'clipboard'
+
 r = Random.new.rand(0..99)
-print r
-
 w = open('words.txt').read.split("\n").sample
-print w
-
 s = open('symbols.txt').read.split("\n").sample
-print s
+
+pass = %Q{#{r}#{w}#{s}}
+
+# Can you say verbose?
+
+puts "Hey, little guy. I see you're looking for a password.\n"
+puts "In my parts, we generate based on text files.\n"
+puts "So here. Have a password, on me.\n\n"
+
+print "ROBOT SAYS YOUR PASSWORD IS ", pass, "\n\n"
+
+Clipboard.copy(pass)
+
+puts "Want to know a secret? It's on your clipboard now too.\n"
+puts "Try pasting it. I dare you.\n"
