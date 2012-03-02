@@ -3,7 +3,6 @@ GEM
   specs:
     backports (2.3.0)
     clipboard (1.0.1)
-    ruby-growl (3.0)
 
 PLATFORMS
   ruby
@@ -11,4 +10,3 @@ PLATFORMS
 DEPENDENCIES
   backports
   clipboard
-  ruby-growl
