@@ -12,6 +12,7 @@
 
 # TODO: Digits under 10 are displayed as single digit. 
 
+require 'ruby_gntp'
 require 'clipboard'
 
 r = Random.new.rand(0..99)
@@ -25,6 +26,12 @@ pass = %Q{#{r}#{w}#{s}}
 puts "Hey, little guy. I see you're looking for a password.\n"
 puts "In my parts, we generate based on text files.\n"
 puts "So here. Have a password, on me.\n\n"
+
+GNTP.notify({
+  :app_name => "CCDC Pass",
+  :title    => "ROBOT SAYS YOUR PASSWORD IS", 
+  :text     => pass,
+})
 
 print "ROBOT SAYS YOUR PASSWORD IS ", pass, "\n\n"
 

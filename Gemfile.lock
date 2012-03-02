@@ -3,6 +3,7 @@ GEM
   specs:
     backports (2.3.0)
     clipboard (1.0.1)
+    ruby_gntp (0.3.4)
 
 PLATFORMS
   ruby
@@ -10,3 +11,4 @@ PLATFORMS
 DEPENDENCIES
   backports
   clipboard
+  ruby_gntp
